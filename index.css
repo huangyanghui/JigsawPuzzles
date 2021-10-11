@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #cacaca;
+}
+.box {
+  display: flex;
+  background-color: palegoldenrod;
+  box-shadow: 0 0 10px 5px #ccc;
+  width: 1150px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+.bigBoxOfFragments {
+  position: relative;
+  height: 600px;
+  width: 600px;
+  box-shadow: 0 0 15px 5px #ccc;
+  outline: 1px solid #cacaca;
+}
+.bigBoxOfFragments > div {
+  position: absolute;
+  background-size: 600px 600px;
+  outline: rgba(255, 255, 255, 0.5) solid 1px;
+  transition: all 0.3s;
+}
+.bigBoxOfFragments .atLast {
+  background-image: none !important;
+  background-color: #fff !important;
+}
+.features {
+  background-color: #cacaca;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin-left: 40px;
+  padding: 30px 0;
+}
+.features .stepCount {
+  height: 50px;
+  width: 350px;
+  border: 3px solid #fff;
+  line-height: 50px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  color: rgba(167, 14, 14, 0.7);
+  font-size: 14px;
+}
+.features .example {
+  width: 350px;
+  height: 350px;
+  margin-top: 10px;
+}
+.features .mode {
+  width: 350px;
+  height: 40px;
+  text-align: center;
+  color: red;
+  font-size: 13px;
+}
+.features .mode select {
+  color: #888;
+  outline: none;
+  width: 50px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+.features .switchPicture {
+  width: 350px;
+  text-align: center;
+  margin: 10px 0;
+}
+.features .switchPicture img {
+  width: 70px;
+  height: 70px;
+  margin: 0 2px;
+}
+.features button {
+  width: 250px;
+  height: 40px;
+  background: yellowgreen;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.7;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.features button:hover {
+  opacity: 1;
+}
